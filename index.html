@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="code.css">
+</head>
+<body>
+    <audio controls autoplay loop hidden>
+        <source src="audio/Bubblegum K.K. - K.K. Slider.mp3" type="audio/mp3">
+    </audio>
+    <div id="catimg1">
+        <img id="redcatimg" src="images/redcat.png" alt="">
+    </div>
+    <div id="catimg2">
+        <img id="bluecatimg" src="images/bluecat.png" alt="">
+    </div>
+    <div id="healthcontainer1">
+        <div id="empty"></div>
+        <div id="healthbarPlayer"></div>
+        <p id="playerHP"></p>
+    </div>
+    <div id="healthcontainer2">
+        <div id="empty"></div>
+        <div id="healthbarOpp"></div>
+        <p id="opponentHP"></p>
+    </div>
+    <div id="navbar">
+        <div id="coinNav">
+            <h1 id="coinheader">Flip the coin, champ!</h1>
+            <button onclick="turnBattle('heads')" id="heads">HEADS</button>
+            <button onclick="turnBattle('tails')" id="tails">TAILS</button>
+            <p id="choice"></p>
+            <p id="coin"></p>
+            <div id="coinimage">
+                <img id="coinpic" src="images/headspic.png">
+            </div>
+        </div>
+        <div id="actiontext">
+            <div id="extradiv">
+                <p id="displaychoice" class="actiontextjelly"></p>
+                <br>
+                <p id="oppchoice" class="actiontextjelly"></p>
+                <br>
+                <p id="turnEvent" class="actiontextjelly"></p>
+            </div>
+        </div>
+        <div id="actionNav">
+            <button id="attack" onclick="playerAttack()">Attack the Opponent</button>
+            <button id="defend" onclick="playerDefend()">Defend Yourself</button>
+        </div>
+    </div>
+    <button onclick="setGame()" id="resetBTN">RESET</button>
+    <script src="code.js"></script>
+</body>
+</html>

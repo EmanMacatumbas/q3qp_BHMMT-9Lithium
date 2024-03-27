@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+*{
+    margin: 0%;
+    font-family: "Permanent Marker", cursive;
+}
+body{
+    margin: 0%;
+    background-image: url(images/backgrounds.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    object-fit: cover;
+}
+#healthbarPlayer{
+    height: 6vh;
+    width: 400px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    background-color: greenyellow;
+    position: absolute;
+}
+#healthbarOpp{
+    height: 6vh;
+    width: 400px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    background-color: greenyellow;
+    position: absolute;
+}
+#healthcontainer1{
+    height: 10vh;
+    width: 420px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    background-color: black;
+    border: 5px solid black;
+    top: 5%;
+    left: 5%;
+    position: fixed;
+}
+#healthcontainer2{
+    height: 10vh;
+    width: 420px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    background-color: black;
+    border: 5px solid black;
+    right: 5%;
+    top: 5%;
+    position: fixed;
+}
+#playerHP{
+    color: white;
+    left: 2%;
+    bottom: 2%;
+    position: absolute;
+}
+#opponentHP{
+    color: white;
+    left: 2%;
+    bottom: 2%;
+    position: absolute;
+}
+#empty{
+    height: 6vh;
+    width: 400px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    background-color: grey;
+    position: absolute;
+}
+#navbar{
+    height: 35vh;
+    width: 100vw;
+    bottom: 0%;
+    background-color: rgb(185, 185, 185);
+    border-top: 10px solid black;
+    position: fixed;
+}
+#coinNav{
+    height: 35vh;
+    width: 35vw;
+    background-color: rgb(113, 113, 113);
+    position: fixed;
+}
+#actionNav{
+    right: 0vw;
+    height: 35vh;
+    width: 25vw;
+    background-color: rgb(185, 185, 185);
+    position: fixed;
+}
+#resetBTN{
+    right: 1%;
+    top: 2%;
+    position: absolute;
+    font-size: 1.5vw;
+}
+#heads{
+    top: 30%;
+    left: 3%;
+    position: absolute;
+    font-size: 1.5vw;
+    background-color: gold;
+    border-radius: 50%;
+}
+#tails{
+    top: 50%;
+    left: 3%;
+    position: absolute;
+    font-size: 1.5vw;
+    background-color: gold;
+    border-radius: 50%;
+}
+#coinheader{
+    top: 1%;
+    left: 3%;
+    position: absolute;
+}
+#choice{
+    bottom: 20%;
+    left: 3%;
+    position: absolute;
+    font-size: 3vh;
+}
+#coin{
+    bottom: 8%;
+    left: 3%;
+    position: absolute;
+    font-size: 3vh;
+}
+#actiontext{
+    left: 35vw;
+    width: 40vw;
+    height: 35vh;
+    background-color: rgb(185, 185, 185);
+    position: fixed;
+}
+#extradiv{
+    width: 30vw;
+    height: 30vh;
+    margin-left: 5vw;
+    margin-top: 2.5vh;
+    background-color: rgb(185, 185, 185);
+    text-align: center;
+}
+.actiontextjelly{
+    font-size: 1.7vw;
+}
+#attack{
+    top: 20%;
+    left: 3%;
+    position: absolute;
+    font-size: 1.5vw;
+    border-radius: 50px;
+    background-color: red;
+}
+#defend{
+    top: 60%;
+    left: 3%;
+    position: absolute;
+    font-size: 1.5vw;
+    border-radius: 50px;
+    background-color: blue;
+}
+#coinpic{
+    width: 15vw;
+}
+#coinimage{
+    right: 2%;
+    position: absolute;
+}
+#redcatimg{
+    width: 25vw;
+}
+#bluecatimg{
+    width: 25vw;
+}
+#catimg1{
+    top: 23%;
+    left: 10%;
+    position: fixed;
+}
+#catimg2{
+    top: 23%;
+    right: 10%;
+    position: fixed;
+}
