@@ -40,7 +40,7 @@ function setGame(){
 setGame();
 //checks if the health of a player is 0 and determines winner
 function checkHP(playerHP,opponentHP){
-    if(playerHP<=0){
+    if(playerHP<=0&&opponentHP>0){
         playerHP=0;
         redcatimg.src='images/redcatdead.png';
         document.getElementById("playerHP").innerHTML="Player: "+ playerHP;
@@ -56,7 +56,7 @@ function checkHP(playerHP,opponentHP){
         hpProgressOpp=opponentHP*4;
         healthbarOpp.style.width = hpProgressOpp+'px';
     }
-    if(opponentHP<=0){
+    if(opponentHP<=0&&playerHP>0){
         opponentHP=0;
         bluecatimg.src='images/bluecatdead.png';
         document.getElementById("opponentHP").innerHTML="Opponent: "+ opponentHP;
@@ -202,8 +202,9 @@ function playerAttack(turndec){
                 hpProgressOpp=opponentHP*4;
                 healthbarOpp.style.width = hpProgressOpp+'px';
         }
-        checkHP(playerHP,opponentHP);
+        
     }
+    checkHP(playerHP,opponentHP);
 }
 //Set of conditions that determine the outcome of the turn when the player defends
 function playerDefend(){
